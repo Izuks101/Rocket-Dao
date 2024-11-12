@@ -7,7 +7,7 @@
 body{
     min-height: 100vh;
     display: flex;
-    justify-content:left;
+    justify-content:center;
     align-items: center;
     font-family: 'inter', sans-serif;
 }
@@ -271,27 +271,28 @@ section{
         height: 145px;
         border-radius: 0px 5px 5px 0px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
     }
     .rewardCount .tgAge-reward{
         border: 1px solid #262626;
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         display: flex;
         justify-content: space-around;
-        align-items:flex-start;
+        align-items:center;
         flex-direction: column;
-        padding: 7px 10px;
+        padding: 18px 0px;
     }
     .tgAge-reward p{
         color:#3B3B3B;
-        font-size: 15px;
+        font-size: 18px;
+        text-align: center;
     }
     .tgAge-reward span{
         color: #B6B6B6;
-        font-size: 20px;
+        font-size: 23px;
         font-weight: bold;
     }
     #rewardRkTme{
@@ -390,7 +391,7 @@ main.active{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 0px;
+        margin-top: -30px;
         z-index: 0;
 
         .backImg1{
@@ -1399,7 +1400,7 @@ section main:nth-child(6){
 }
 
 .topToggle_bar{
-    border: 1px solid #3D3D3D;
+    border: 1px solid #1e1e1f;
     height: 40px;
     width: 380px;
     border-radius: 8px;
@@ -1421,7 +1422,7 @@ section main:nth-child(6){
         cursor: pointer;
     }
     button.active{
-        background: #5d5c5c;
+        background: #1e1e1f;
         border-radius: 8px;
     } 
 }
@@ -1531,7 +1532,7 @@ section main:nth-child(6){
 /* REFERRAL PAGE CSS */
 
 section main:nth-child(7){
-    background-image: linear-gradient(to bottom, #121214 60%, #241600);
+    background: #121214;
 }
 
 .top_desc{
@@ -1681,7 +1682,7 @@ section main:nth-child(7){
 
     .ref_outline{
         border: none;
-        background-color: #232323;
+        background-color: #1e1e1f;
         height: 73px;
         width: 380px;
         border-radius: 8px;
@@ -1772,7 +1773,7 @@ section main:nth-child(7){
 
     .active_ref_outline{
         border: none;
-        background-color: #232323;
+        background-color: #1e1e1f;
         height: 73px;
         width: 380px;
         border-radius: 8px;

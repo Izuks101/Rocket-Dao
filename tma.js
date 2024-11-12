@@ -78,11 +78,12 @@ launchBtn.addEventListener('click', function(){
     if(TgProgressBar.addEventListener('animationend', function(){
         LaunchProgressBar.style = ('animation: progressBar-Launch 5s forwards', 'visibility: visile');
         document.querySelector('.tgRewardMe').style.visibility ='visible';
-        document.getElementById('rewardRkTme').style.visibility ='visible';
+        
     }));
 
     if(LaunchProgressBar.addEventListener('animationend', function(){
-        document.getElementById('rewardRkTme2').style.visibility ='visible';
+        // document.getElementById('rewardRkTme2').style.visibility ='visible';
+        document.getElementById('rewardRkTme').style.visibility ='visible';
         claimBtnR.style.visibility = 'visible';
         // document.querySelectorAll('.rewardRkTme').style.visibility ='visible';
     }));    
