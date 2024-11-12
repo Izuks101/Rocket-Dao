@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+}
+section{
+    border: none;
+    margin-left: 25px;
+    height: 932px;
+    width: 430px;
+    background-image: radial-gradient(#2D2D2C 2%, #18181B);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px 0px 0px;
+}
+
+.top_nav{
+    border: 1px solid #3D3D3D;
+    height: 73px;
+    width: 380px;
+    border-radius: 8px;
+    /* position: relative;
+    top: -390px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+
+    .timer{
+        color: #858585;
+        border-radius: 7.82px;
+        background-color: #101010;
+        font-weight: bolder;
+        font-size: 14px;
+        height: 47px;
+        width: 87px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dollar_value{
+        color: #858585;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .ref_indicator{
+        color: #858585;
+        padding: 0px 15px 0px 15px;
+        border-radius: 7.82px;
+        background-color: #101010;
+        font-weight: bolder;
+        font-size: 12px;
+        height: 47px;
+        width: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+nav{
+    border: none;
+    height: 113px;
+    width: 430px;
+    background-color: #0E0E10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 35px 0px 35px;
+
+    .home, .task, .friends, .boost, .stats{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 58px;
+        width: 35px;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
+
+

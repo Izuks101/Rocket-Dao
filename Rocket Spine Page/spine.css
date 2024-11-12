@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+}
+section{
+    border: none;
+    margin-left: 25px;
+    height: 932px;
+    width: 430px;
+    background-image: radial-gradient(#2D2D2C 2%, #18181B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* padding: 30px 0px 0px 0px; */
+}
+
+
+.spine_board{
+    border: 2px solid #F2D563;
+    height: 716px;
+    width: 372px;
+    background-image: linear-gradient(#F2D563, #473901 98%);
+    border-radius: 31.94px;
+    /* margin-top: 45px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    opacity: 20px;
+    position: absolute;
+   
+
+
+    .spine_frame_top{
+        border: none;
+        height: 90px;
+        position: relative;
+        right: 120px;
+        top: 20px;
+
+        .spine_count_board{
+            margin-top: 25px;
+        }
+        
+
+        .spine_count_board{
+            border: 1px solid black;
+            width: 87px;
+            height: 47px;
+            border-radius: 8px;
+            background-color: #03142B;
+            color: #656B62; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bolder;
+            
+        }
+    } 
+    
+    /* spine wheel itself */
+
+    .spine_wheel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 5px;
+
+        .spin_board, .spin_border, .spin_hook_1{
+            position: absolute;
+        }
+        .spin_hook_1{
+            top: 73px;
+            cursor: pointer;
+            /* box-shadow: 0px 0px 15px 0px rgb(5, 5, 5) inset; */
+        } 
+
+        .spin_board_rotate{
+            /* border: 1px solid black; */
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            /* height:100vh; */
+            overflow:hidden;
+            /* margin-left: 1000px; */
+        
+            .container{
+                width:306.06px;
+                height:306.06px;
+                background-image: linear-gradient(to top left, #FFFB90 0%, #FBE978 14%, #F8DC65 25%, #E6C758 27%, #C49F40 34%, #AC832F 40%, #9E7225 45%, #996C22 49%, #9D7125 52%, #A98030 56%, #BD9A42 60%, #D9BE5A 64%, #FBE878 69%, #FFFFAA 77%, #FBE878 83%, #A4631B 100%);
+                border-radius:50%;
+                border: 5px solid rgb(239, 183, 0);
+                position: relative;
+                overflow: hidden;
+                /* transition: 5s; */
+                box-shadow: 0px 0px 25px 20px rgb(1, 1, 1) inset;
+                transform:rotate(17deg);
+                
+            }
+            
+            .container div{
+                height:50%;
+                width:100px;
+                position: absolute;
+                clip-path: polygon(100% 0, 50% 100% , 0 0 );
+                transform:translateX(-50%);
+                transform-origin:bottom;
+                text-align:center;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                font-size:12px;
+                font-weight: bolder;
+                font-family:sans-serif;
+                -webkit-text-stroke:1px #444444;
+                text-shadow: 1px 2px 5px rgb(41, 41, 41);
+                padding-bottom: 20px;
+                writing-mode: vertical-rl;
+                /* text-orientation: mixed; */
+                color:#ececec;
+                left:98px;
+                /* box-shadow: 0px 0px 10px 15px rgb(1, 1, 1); */
+            }
+            
+            
+            .container .one{
+                background-color: none;
+                left:50%;
+                text-orientation:upright;
+                color: rgb(236, 226, 208);
+            }
+            .container .two{
+                /* background-image: linear-gradient( #0028FF 0%, #8446FF 25%, #DC5AFF 44%, #FF63FF 52%, #FFC3A7 82%, #FFFF72 100%); */
+                background-image: linear-gradient( #01142B, #4F1E23 75%);
+                transform: rotate(36deg);
+            }
+            .container .three{
+                background-color: none;
+                transform:rotate(72deg);
+            }
+            .container .four{
+                background-image: linear-gradient( to bottom right, #04336e 0%, #4F1E23 55%);
+                transform: rotate(108deg);
+            }
+            .container .five{
+                background-image: none;
+                transform: rotate(144deg);
+            }
+            .container .six{
+                background-image: linear-gradient( #01142B, #4F1E23 75%);
+                transform: rotate(180deg);
+            }
+            .container .seven{
+                background-image: none;
+                transform: rotate(216deg);
+            }
+            .container .eight{
+                background-image: linear-gradient( to bottom right, #04336e 0%, #4F1E23 55%);
+                transform: rotate(252deg);
+            }
+            .container .nine{
+                background-color: none;
+                transform: rotate(288deg);
+            }
+            .container .ten{
+                background-image: linear-gradient( to bottom right, #04336e 0%, #4F1E23 55%);
+                transform: rotate(324deg);
+                color:rgb(230, 193, 73);
+            }
+            
+        } 
+    }
+
+
+    button {
+        background: transparent;
+        padding: 20px 70px 20px 70px; 
+        background: white;
+        background-image: linear-gradient(#03142B, #03142B),
+          linear-gradient(to bottom, #CBA745, #523D04 70%);
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        border: 8px solid transparent;
+        border-radius: 8px;
+
+        margin-bottom: 70px;
+        box-shadow: 0px 4px 10px 0px rgb(14, 14, 14);
+        cursor: pointer;
+
+        .spine_btn_text {
+            background: #bda665;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: 600;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+       
+    }
+    .spine_btn:hover{
+        opacity: 0.75;
+    }
+      
+}
+
+/* WIN POP UPS */
+.WinSpin-body{
+    background: none;
+    height: 932px;
+    width: 430px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    
+
+    .blur-Backround{
+        background: rgb(18, 18, 20, 0.5);
+        height: 932px;
+        width: 430px;
+        backdrop-filter: blur(20px);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .WinSpine-alertPopUp{
+        border: none;
+        height: 405px;
+        width: 372px;
+        background-image: linear-gradient(to top, #18181B, #121214);
+        z-index: 2;
+        border-radius: 31.94px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0px 30px 0px;
+        display: none;
+    }
+    .WinSpine-alertPopUp span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .WinSpine-alertPopUp span > p:nth-child(1){
+        color: white;
+        font-size: 15px;
+    }
+    .WinSpine-alertPopUp span > p:nth-child(2){
+        color: white;
+        font-size: 65px;
+        font-weight: bold;
+        padding: 3px 0px;
+        letter-spacing: 2px;
+    }
+    .WinSpine-alertPopUp span > p:nth-child(3){
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .WinSpine-alertPopUp button{
+        background-color: #CAB04C;
+        width: 293px;
+        height: 41px;
+        border-radius: 11.32px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .WinSpine-alertPopUp2{
+        border: none;
+        height: 405px;
+        width: 372px;
+        background-image: radial-gradient(#221901 -70%, #121214);
+        z-index: 2;
+        border-radius: 31.94px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0px 30px 0px;  
+        /* display: none;  */
+    }
+    .WinSpine-alertPopUp2 span {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 85px;
+        margin-bottom: 10px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .WinSpine-alertPopUp2 span p:nth-child(1){
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .WinSpine-alertPopUp2 span p:nth-child(2){
+        color: rgb(187, 186, 186);
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .WinSpine-alertPopUp2 button{
+        background-color: #CAB04C;
+        width: 293px;
+        height: 41px;
+        border-radius: 11.32px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+/* spine the wheel */
+/* .container{
+    border: none;
+    animation: spine 5s infinite linear;
+}
+
+@keyframes spine {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}  */
+
+
+
+
+
+
+/* nav{
+    border: none;
+    height: 113px;
+    width: 430px;
+    background-color: #0E0E10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 35px 0px 35px;
+
+    .home, .task, .friends, .boost, .stats{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 58px;
+        width: 35px;
+        align-items: center;
+    }
+    
+} */
+
+

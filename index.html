@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKET TMA</title>
+    <link rel="stylesheet" href="tma.css">
+</head>
+<body>
+    <section>
+    <!-- INITIALIZATION PAGE -->
+        <main id="initializing-page" class="pageFrame">
+            <div class="overlay"></div>
+            <img src="background22.png" class="top-img" width="430px"  height="430px">
+            
+            <div class="init-Page-Details">
+                <div class="logoAndName">
+                    <img src="Rocket Dao logo.png" class="rktLogo"  width="64px"  height="55px">
+                    <p>ROCKET DAO</p>
+                </div>
+
+                <p>Hi <span>Smith John</span> <br> Welcome to the Universe!</p>
+
+                <div class="call2Action">
+                    <p>
+                        <span>LAUNCHING YOUR</span> <br>
+                        <span>ROCKET</span>
+                    </p>
+
+                    <div class="progressBar-outer">
+                        <div class="progressBar-inner"></div>
+                    </div>
+                </div>
+
+                <button class="launchBtn" onclick="LaunchNow()">
+                    <p>LAUNCH NOW</p>
+                    <img src="rocket icon1.png" width="23px" height="">
+                </button>
+            </div>
+        </main>
+
+    <!-- SPECIAL OFFER PAGE -->
+       <main class="offerPage">
+            <div class="headOffer">
+                <img src="rocket cloud1.png" width="215px" height="200px">
+                <p><span class="offerSpecial">We have Something Special for You !</span></p>
+            </div>
+
+            <div class="tgAge">
+                <p>Checking your Telegram Age</p>
+                <div class="tgAge-pBar">
+                    <div class="progressTg"></div>
+                </div>
+                <div class="tgRewardMe"><p>Hi, <spa>Smith John</spa> - You've been on Telegram for 4 years.</p></div>
+            </div>
+
+            <div class="prepare-Launch">
+                <p>Preparign your Launch Reward</p>
+                <div class="launchpBar">
+                    <div class="progressLaunch"></div>
+                </div>
+            </div>
+
+            <div class="reward">
+                <div class="rewardImg">
+                    <img src="gift box black.png" width="150px" height="155px">
+                </div>
+                <div class="rewardCount">
+                    <div class="tgAge-reward">
+                        <p>Telegram Age Reward</p>
+                        <div id="rewardRkTme"><span>1000 RKT</span></div>
+                    </div>
+
+                    <div class="tgAge-reward">
+                        <p>Your Launch Reward</p>
+                        <div id="rewardRkTme2"><span>46 000 RKT</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="claimBtn" onclick="claimBtn()">
+                <p>CLAIM</p>
+                <img src="gift box.png" width="20px" height="20px">
+            </button>
+       </main>
+
+    <!-- HOME PAGE     -->
+        <main id="home" data-tab="homePage" class="pageFrame active">
+            <div class="topImgCoins">
+                <img src="DashtopCoin.png" class="backImg backImg1" width="395px" height="359.8px">
+                <img src="DashSideCoin.png" class="backImg backImg2" width="189.46px" height="271.63px">
+                <img src="DashleftSideCoin.png" class="backImg backImg3" width="202px" height="184px">
+                
+                <div class="head-bounties">
+                    <div class="headTitleBounties">
+                        <img src="Rocket Dao logo.png" width="85px" height="73.05px">
+                        <p>MY BOUNTIES</p>
+                    </div>
+        
+                    <div class="myGrand-Reward">
+                        <p>500,000</p>
+                        <p>VASE</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="reward-table">
+                <div class="reward-table-list">
+                    <img src="telegram-side-img.png" width="19.18px" height="19.18px">
+                    <span>
+                        <p>Telegram Age</p>
+                        <p>+10,000</p>
+                    </span>
+                    <img src="small-side-coin.png" width="19.08px" height="20px">
+                </div>
+
+                <div class="reward-table-list">
+                    <img src="Task-active.png" width="12.5px" height="17.36px">
+                    <span>
+                        <p>Task</p>
+                        <p>+50,000</p>
+                    </span>
+                    <img src="small-side-coin.png" width="19.08px" height="20px">
+                </div>
+
+                <!-- <div class="reward-table-list">
+                    <img src="Boost-active.png" width="16.14px" height="17.6px">
+                    <span>
+                        <p>Boom</p>
+                        <p>+450,000</p>
+                    </span>
+                    <img src="small-side-coin.png" width="19.08px" height="20px">
+                </div> -->
+
+                <div class="reward-table-list">
+                    <img src="friends-active.png" width="19px" height="14.15px">
+                    <span>
+                        <p>Invite</p>
+                        <p>+15,000</p>
+                    </span>
+                    <img src="small-side-coin.png" width="19.08px" height="20px">
+                </div>
+                
+            </div>
+
+            <div class="walletConnect">
+                <img src="ion_wallet_black.png" width="20px" height="20px">
+                <span>Ton Wallet Connect</span>
+                <img src="navigate_right_black.png" width="9px" height="14px">
+            </div>
+
+        </main>
+
+    <!-- BOOST or Boom PAGE -->
+    <main id="boost" id="home" data-tab="homePage" class="pageFrame">
+        <div class="top_nav">
+            <!-- <div class="timer" id="timer">00:00:00</div> -->
+            <!-- <div class="dollar_value">$0.00</div>
+            <div class="ref_indicator"><img src="profile avatar.png" width="15" height="16.67">200</div> -->
+            <div class="rocket">ROCKET DAO</div>
+        </div>
+        <div class="timer" id="timer">00:00:00</div>
+        <!-- <div class="rocket">ROCKET DAO</div> -->
+
+        <!-- <div class="rkt_count_property">
+            <img src="VR Rocket Logo.png" width="39.56" height="34">
+            <p>00.000</p>
+            <p>RKT</p>
+        </div> -->
+
+        <div class="carousel">
+            <!-- Non-Colored Shapes on the Right -->
+            
+                <div id="shape-1" class="shape shape-non-colored">
+                    <div class="descBody">
+                        <p class="day">Day 1</p>
+                        <p class="dayClaim">1000</p>
+                        <p class="dayVase"><img class="smallVase" src="small-side-coin.png" width="6px" height="6px">Vase</p>
+                    </div>    
+                </div>
+                <div id="shape-2" class="shape shape-non-colored">
+                    <div class="descBody">
+                        <p class="day">Day 2</p>
+                        <p class="dayClaim">2500</p>
+                        <p class="dayVase"><img class="smallVase" src="small-side-coin.png" width="6px" height="6px">Vase</p>
+                    </div>    
+                </div>
+                <div id="shape-3" class="shape shape-non-colored">
+                    <div class="descBody">
+                        <p class="day">Day 3</p>
+                        <p class="dayClaim">7500</p> 
+                        <p class="dayVase"><img class="smallVase" src="small-side-coin.png" width="6px" height="6px">Vase</p>
+                    </div>
+                </div>
+                <div id="shape-4" class="shape shape-non-colored">
+                    <div class="descBody">
+                        <p class="day">Day 4</p>
+                        <p class="dayClaim">10000</p>
+                        <p class="dayVase"><img class="smallVase" src="small-side-coin.png" width="6px" height="6px">Vase</p>
+                    </div>
+                </div>
+                <div id="shape-5" class="shape shape-non-colored">
+                    <div class="descBody">
+                        <p class="day">Day 5</p>
+                        <p class="dayClaim">12500</p> 
+                        <p class="dayVase"><img class="smallVase" src="small-side-coin.png" width="6px" height="6px">Vase</p>
+                    </div>    
+                </div>
+                <div id="shape-6" class="shape shape-non-colored">
+                    <div class="descBody">
+                        <p class="day">Day 6</p>
+                        <p class="dayClaim">16000</p>
+                        <p class="dayVase"><img class="smallVase" src="small-side-coin.png" width="6px" height="6px">Vase</p>
+                    </div>
+                </div>
+                <div id="shape-7" class="shape shape-non-colored">
+                    <div class="descBody">
+                        <p class="day">Day 7</p>
+                        <p class="dayClaim">22000</p>
+                        <p class="dayVase"><img class="smallVase" src="small-side-coin.png" width="6px" height="6px">Vase</p>
+                    </div>    
+                </div>
+            <!-- Focus Area for Animation Effect -->
+            <!-- <div class="focus-area"></div> -->
+        </div>
+
+
+
+        <div class="rocket_mine_indicator_container">
+            <div class="rocket_mine_indicator">
+                <div class="rocket_mine_indicator_inner">
+                    <img src="rocket10.png" width="140" height="270" class="rocket_img"> 
+                    <!-- <video width="250" height="370" class="rocket_img"autoplay loop controls="false"><source src="ship.webm" type="video/webm"></video> -->
+                    <img src="Rkt gift box.webp" width="300" height="260" class="rocket_gift_Box_img"> 
+                </div>
+            </div>
+
+            <svg class="circleAnimate" width="320" height="320"  xmlns="http://www.w3.org//200/svg"
+                    version="1.1" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#E4C200" />
+                            <stop offset="100%" stop-color="#8C5C02" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle1" id="circle2"  cx="160" cy="160" r="140" stroke-linecap="round"/>
+            </svg>
+            
+        </div>
+
+
+        <div class="mining_count_spine">
+            <button class="mining_count" id="mining_count">
+                <p id="rktMine">Access Daily Vase Rewards</p>
+                <!-- Mining... 11.590  RKT -->
+            </button>
+            
+            <button class="spine_btn active">
+                <img src="spine Frame.png" width="56.27" height="56.27" class="spine_img"> 
+            </button>
+            
+        </div>
+
+
+        <!-- formal Boost content before it was changed to Boom -->
+        <!-- <div>
+            <div class="headTitle">
+                <p>Boost Power</p>
+            </div>
+
+            <div class="boost-tabToggle">
+                <button class="boost-tabBtn active" id="boosttab_btn" onclick="showTabonBoost('boost with rkt')">Boost with RKT</button>
+                <button class="boost-tabBtn" id="boosttab_btn" onclick="showTabonBoost('boost with token')">Boost with Token</button>
+            </div>
+
+
+            <div class="boost-body">
+
+                <div id="boost with rkt" class="boostWith-Rkt active">
+
+                    <div class="increase-mineP">
+                        <p>Increase your mining power by buying BOOST with your RKT balance</p>
+                    </div>
+
+                    <div class="boost-area" id="boost-area">
+
+                    
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                    </div>
+                </div>    
+
+                <div id="boost with token" class="boostWith-Rkt boostToken">
+
+                    <div class="increase-mineP">
+                        <p>Increase your mining power by buying BOOST with Token</p>
+                    </div>
+
+                    <div class="wallet">
+                        <img src="wallet icon.png" width="20px" height="20px">
+                        <span>Ton Wallet Connect</span>
+                        <img src="arrow right.png" width="20px" height="20px">
+                    </div>
+
+                    <div class="boost-area" id="boost-area1">
+
+                    
+                    
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+        
+                            <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+        
+                            <div class="boost_desc">
+                                <p>5000 RKT</p>
+                                <div class="boost_power">1x MP</div>
+                            </div>
+        
+                            <button class="boost-button"> Boost </button>
+        
+                        </div>
+
+                        <div class="boost-frame">
+
+                        <div class="boost_img"><img src="Boost icon.png" width="13px" height="20px"></div>
+
+                        <div class="boost_desc">
+                            <p>5000 RKT</p>
+                            <div class="boost_power">1x MP</div>
+                        </div>
+
+                        <button class="boost-button"> Boost </button>
+
+                    </div>
+
+                </div>
+            
+
+            </div> 
+        </div>     -->
+    </main>
+
+    <!-- SPINE PAGE -->
+        <main class="spinePopUp">
+            
+                <div class="spine_board">
+                    <div class="spine_frame_top">
+                        <div class="spine_close">&times;</div>
+                        <div class="spine_count_board">3 Spin</div>
+                </div>
+        
+                <!-- spiner section         -->
+                    <div class="spine_wheel">
+                        <!-- <img src="spine board 1.png" class="spin_board" id="spin_board" width="480" height="480"> -->
+        
+                        <div class="spin_board_rotate" class="spin_board" id="spin_board">
+                            <!-- <button id="spin">Spin</button>
+                            <span class="arrow"></span> -->
+                            <div class="container" id="container">
+                                <div class="one" style="font-size:28px">0</div>
+                                <div class="two">+1500 RKT</div>
+                                <div class="three">+50 RKT</div>
+                                <div class="four">+1000 RKT</div>
+                                <div class="five">+250 RKT</div>
+                                <div class="six">+500 RKT</div>
+                                <div class="seven">+10000 RKT</div>
+                                <div class="eight">+2500 RKT</div>
+                                <div class="nine">+100 RKT</div>
+                                <div class="ten">+50000 RKT</div>
+                            </div>
+                        </div>
+        
+            
+        
+                        <img src="spin border.png" class="spin_border" width="430" height="430">
+                        <!-- <img src="spin hook.png" class="spin_hook" id="spin_hook" width="95" height="190"> -->
+                        <img src="spine hook 1.png" onclick="spineProperty()" class="spin_hook_1" id="spin_hook_1" width="140" height="140">
+                    </div>
+        
+        
+                <!-- spin button section             -->        
+                    <button class="spine_btn" id="spine_btn" onclick="spineProperty()">
+                        <span class="spine_btn_text">Spine & Win</span>
+                    </button>
+                </div>
+               
+                <div class="WinSpin-body">
+                    <div class="blur-Backround"></div>
+        
+                    <div class="WinSpine-alertPopUp">
+                        <img src="coin20a.png" width="220px" height="125px">
+                        <span>
+                            <p>You Just Won</p>
+                            <p>+1000</p>
+                            <p>VASE</p>
+                        </span>
+                        <button>Congrats</button>
+                    </div>
+        
+                    <div class="WinSpine-alertPopUp2">
+                        <img src="sad emoji1.png" width="170px" height="170px">
+                        <span>
+                            <p>Wasn't your lucky spin.</p>
+                            <p>It was a great effort, but<br> keep trying.</p>
+                        </span>
+                        <button>Alright!</button>
+                    </div>
+        
+                </div>
+        
+        
+        </main>
+
+    <!-- TASK PAGE -->
+        <main id="task" class="pageFrame" >
+            <div class="head_desc">
+                <p>ROCKET</p>
+                <P>Complete available task and earn instant VASE</P>
+            </div>
+    
+            <div class="topToggle_bar">
+                <button class="tabBtn active" id="tab_btn" onclick="showTab('active')">Active</button>
+                <button class="tabBtn" id="tab_btn" onclick="showTab('completed')">Completed</button>
+            </div>
+    
+            <div class="alpha_body">
+    
+                <div id="active" class="aktiv-tab active">
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img"><img src="telegram-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Join Rocket Dao on Telegram</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <div class="checker1">
+                            <img src="Check box.png" class="checker" width="30px" height="30px">
+                        </div>
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img"><img src="telegram-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Follow Rocket Dao Channel</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <div class="checker1">
+                            <img src="Check box.png" class="checker" width="30px" height="30px">
+                        </div>
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img youtube_img"><img src="youtube-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Subscribe to Rocket <br>Dao on Youtube</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <button class="claimBtn">Claim</button>
+    
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img"><img src="twitter-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Follow Rocket Dao <br>on X</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <div class="checker1">
+                            <img src="Check box.png" class="checker" width="30px" height="30px">
+                        </div>
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img"><img src="telegram-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Join Rocket on X</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+    
+                        <div class="checker1">    
+                            <img src="Check box.png" class="checker" width="30px" height="30px">
+                        </div>
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img youtube_img"><img src="youtube-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Watch Rocket News</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <button class="claimBtn">Claim</button>
+    
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img youtube_img"><img src="youtube-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Watch Rocket News</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <button class="claimBtn">Claim</button>
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img"><img src="telegram-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Join Rocket on X</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <div class="checker1">
+                            <img src="Check box.png" class="checker" width="30px" height="30px">
+                        </div>
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img youtube_img"><img src="youtube-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Watch Rocket News</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <button class="claimBtn">Claim</button>
+    
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img youtube_img"><img src="youtube-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Watch Rocket News</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <button class="claimBtn">Claim</button>
+                    </div>
+                </div>
+                
+                <!-- Completed task -->
+                <div id="completed" class="aktiv-tab">
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img"><img src="telegram-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Follow Rocket Dao Channel</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <div class="checker1">
+                            <img src="check box green.png" class="checker" width="30px" height="30px">
+                        </div>
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img youtube_img"><img src="youtube-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Subscribe to Rocket <br>Dao on Youtube</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <div class="checker1">
+                            <img src="check box green.png" class="checker" width="30px" height="30px">
+                        </div>
+    
+                    </div>
+    
+                    <div class="telegram_task">
+    
+                        <div class="telegram_img"><img src="twitter-coin.png" class="checker" width="55px" height="55px"></div>
+    
+                        <div class="task_desc">
+                            <p>Follow Rocket Dao <br>on X</p>
+                            <div class="rktTask_Bonus">1000 VASE +</div>
+                        </div>
+                        
+                        <div class="checker1">
+                            <img src="check box green.png" class="checker" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>    
+    
+        </main>
+
+    <!-- FRIENDS PAGE -->
+        <main id="friends" class="pageFrame">
+            <div class="top_desc">
+                <p>Invite Friends</p>
+            </div>
+    
+            <div class="ref_earning_board">
+                <p>Affiliate Earnings</p>
+    
+                <span>
+                    <p>100</p>
+                    <p>RKT</p>
+                </span>
+    
+                <div>
+                    <p>Claim RKT</p>
+                </div>
+    
+                <p>
+                    Earn 15% of your friends affiliate earnings <br> 5% from their referrals
+                </p>
+    
+            </div>
+    
+    
+            <div class="top_toggle_bar">
+                <button class="referralBtn active" id="refBtn1" data-tab="referral" onclick="showTabonRef('referral')">
+                    <p>+10</p>
+                    <p>Referral</p>
+                </button>
+                
+                <button class="activitiesBtn" id="refBtn1" data-tab="activities" onclick="showTabonRef('activities')">
+                    Activities
+                </button>
+            </div>
+    
+            
+            <div class="ref_body">
+
+                <div id="referral" class="ref_section active">
+                    <div class="ref_outline">
+        
+                        <div class="ref_avatar">
+                            <p>J</p>
+                        </div>
+        
+                        <div class="ref_desc">
+                            <p>John Mines Smith</p>
+                            <div class="rktref_Bonus">1 680 789 RKT +</div>
+                        </div>
+        
+                        <div  class="ref_profitle">
+                            <img src="profile avatar.png" width="17px" height="17px">
+                            <p>30</p>
+                        </div>    
+                    </div>
+
+                    <div class="ref_outline">
+        
+                        <div class="ref_avatar">
+                            <p>J</p>
+                        </div>
+        
+                        <div class="ref_desc">
+                            <p>John Mines Smith</p>
+                            <div class="rktref_Bonus">1 680 789 RKT +</div>
+                        </div>
+        
+                        <div  class="ref_profitle">
+                            <img src="profile avatar.png" width="17px" height="17px">
+                            <p>30</p>
+                        </div>    
+                    </div>
+    
+                    <div class="ref_outline" id="ref_outline">
+        
+                        <div class="ref_avatar">
+                            <p>J</p>
+                        </div>
+        
+                        <div class="ref_desc">
+                            <p>John Mines Smith</p>
+                            <div class="rktref_Bonus">1 680 789 RKT +</div>
+                        </div>
+        
+                        <div  class="ref_profitle">
+                            <img src="profile avatar.png" width="17px" height="17px">
+                            <p>30</p>
+                        </div>    
+                    </div>
+    
+                    <div class="ref_outline" id="ref_outline">
+        
+                        <div class="ref_avatar">
+                            <p>J</p>
+                        </div>
+        
+                        <div class="ref_desc">
+                            <p>John Mines Smith</p>
+                            <div class="rktref_Bonus">1 680 789 RKT +</div>
+                        </div>
+        
+                        <div  class="ref_profitle">
+                            <img src="profile avatar.png" width="17px" height="17px">
+                            <p>30</p>
+                        </div>    
+                    </div>
+
+                    <div class="ref_outline" id="ref_outline">
+        
+                        <div class="ref_avatar">
+                            <p>J</p>
+                        </div>
+        
+                        <div class="ref_desc">
+                            <p>John Mines Smith</p>
+                            <div class="rktref_Bonus">1 680 789 RKT +</div>
+                        </div>
+        
+                        <div  class="ref_profitle">
+                            <img src="profile avatar.png" width="17px" height="17px">
+                            <p>30</p>
+                        </div>    
+                    </div>
+    
+                    <div class="ref_outline" id="ref_outline">
+        
+                        <div class="ref_avatar">
+                            <p>J</p>
+                        </div>
+        
+                        <div class="ref_desc">
+                            <p>John Mines Smith</p>
+                            <div class="rktref_Bonus">1 680 789 RKT +</div>
+                        </div>
+        
+                        <div  class="ref_profitle">
+                            <img src="profile avatar.png" width="17px" height="17px">
+                            <p>30</p>
+                        </div>    
+                    </div>
+
+                    <div class="ref_outline" id="ref_outline">
+        
+                        <div class="ref_avatar">
+                            <p>J</p>
+                        </div>
+        
+                        <div class="ref_desc">
+                            <p>John Mines Smith</p>
+                            <div class="rktref_Bonus">1 680 789 RKT +</div>
+                        </div>
+        
+                        <div  class="ref_profitle">
+                            <img src="profile avatar.png" width="17px" height="17px">
+                            <p>30</p>
+                        </div>    
+                    </div>
+                </div>
+                
+                <!-- referrall page activities section  -->
+                <div id="activities" class="ref_section">
+
+                    <div class="active_ref_outline">
+        
+                        <div class="task_desc1">
+                            <p>Invite 1 - 5 friends</p>
+                            <div class="rktref_Bonus">Earn +100 RKT per Referral</div>
+                        </div>
+
+                        <p class="pGreen" >+500</p>
+        
+                        <img src="check box green.png" class="checker" width="30px" height="30px">
+        
+                    </div>
+
+                    <div class="active_ref_outline">
+        
+                        <div class="task_desc1">
+                            <p>Invite 6 - 10 friends</p>
+                            <div class="rktref_Bonus">Earn +300 RKT per Referral</div>
+                        </div>
+
+                        <p class="pGreen" >+1500</p>
+        
+                        <img src="Check box.png" class="checker" width="30px" height="30px">
+        
+                    </div>
+
+                    <div class="active_ref_outline">
+        
+                        <div class="task_desc1">
+                            <p>Invite 6 - 10 friends</p>
+                            <div class="rktref_Bonus">Earn +300 RKT per Referral</div>
+                        </div>
+
+                        <p class="pGreen" >+1500</p>
+        
+                        <img src="Check box.png" class="checker" width="30px" height="30px">
+        
+                    </div>
+
+                    <div class="active_ref_outline">
+        
+                        <div class="task_desc1">
+                            <p>Invite 11 - 25 friends</p>
+                            <div class="rktref_Bonus">Earn +700 RKT per Referral</div>
+                        </div>
+
+                        <p class="pGreen" >+10,500</p>
+        
+                        <img src="Check box.png" class="checker" width="30px" height="30px">
+        
+                    </div>
+
+                    <div class="active_ref_outline">
+        
+                        <div class="task_desc1">
+                            <p>Invite 11 - 25 friends</p>
+                            <div class="rktref_Bonus">Earn +700 RKT per Referral</div>
+                        </div>
+
+                        <p class="pGreen" >+10,500</p>
+        
+                        <img src="Check box.png" class="checker" width="30px" height="30px">
+        
+                    </div>
+
+                    <div class="active_ref_outline">
+        
+                        <div class="task_desc1">
+                            <p>Invite 11 - 25 friends</p>
+                            <div class="rktref_Bonus">Earn +700 RKT per Referral</div>
+                        </div>
+
+                        <p class="pGreen" >+10,500</p>
+        
+                        <img src="Check box.png" class="checker" width="30px" height="30px">
+        
+                    </div>
+
+                    <div class="active_ref_outline">
+        
+                        <div class="task_desc1">
+                            <p>Invite 11 - 25 friends</p>
+                            <div class="rktref_Bonus">Earn +700 RKT per Referral</div>
+                        </div>
+
+                        <p class="pGreen" >+10,500</p>
+        
+                        <img src="Check box.png" class="checker" width="30px" height="30px">
+        
+                    </div>
+
+                </div>
+            </div>
+
+           
+    
+            <button class="copy_ref_link">
+                <p>Copy Referral Link</p>
+            </button>
+
+        </main>
+
+
+    <!-- STATS PAGE -->
+        <main id="stats" class="pageFrame">
+
+            <div class="top_rank">
+                <p>Learder Rank</p>
+                <img src="rank.png" width="28px" height="28px">
+            </div>
+            
+            <div class="rank_body">
+                
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>1</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>2</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>Sarah Philip</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>10600</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>3</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>Ferdinand Camel</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>9200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>4</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>Sand Joe</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>5000</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>5</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>Walter Moses</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>4500</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>6</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>7</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>8</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div> 
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>9</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>10</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>11</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>12</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+                <div class="rank_list">
+
+                    <div class="rank_number">
+                        <p>13</p>
+                    </div>
+
+                    <div class="rank_user_name">
+                        <p>John Mines Smith</p>
+                    </div>
+
+                    <div  class="affiliate_count">
+                        <img src="icon2.png" width="15px" height="15px">
+                        <p>1200</p>
+                    </div>    
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+
+        <nav>
+
+            <button class="bottomBtn" onclick="showBtn('home', 'dashboard-active')" onclick="toggleIcons('home')">
+                <img id="iconImg" class="active" src="click menu icons/Icons/Home 1.png" width="25" height="25">
+                <img id="iconImgReplace" class="active" src="dashboard-active.png" width="25" height="25"> 
+                Home
+            </button>
+
+            <button class="bottomBtn" onclick="showBtn('boost', 'Boost-active')">
+                <img id="iconImg" src="boost.png" width="24" height="27">
+                <img id="iconImgReplace" src="boost-active.png" width="24" height="27"> 
+                Boom 
+            </button>
+
+            <button class="bottomBtn" onclick="showBtn('task', 'Task-active')">
+                <img id="iconImg" src="task.png" width="20" height="26">
+                <img id="iconImgReplace" src="task-active.png" width="20" height="26"> 
+                Task 
+            </button>
+
+            <button class="bottomBtn" onclick="showBtn('friends', 'friends-active')">
+                <img id="iconImg" src="referral.png" width="30" height="23">
+                <img id="iconImgReplace" src="friends-active.png" width="30" height="23"> 
+                Friends 
+            </button>
+
+            <button class="bottomBtn" onclick="showBtn('stats', 'statistics-active')">
+                <img id="iconImg" src="statistic.png" width="23" height="23">
+                <img id="iconImgReplace" src="statistics-active.png"  width="23" height="23"> 
+                Stats 
+            </button>
+
+            <!-- <div class="active">
+                <img src="dashboard-active.png" width="25" height="25" id="iconImgReplace">
+                <img src="Boost-active.png" width="20" height="26" id="iconImgReplace">
+                <img src="Task-active.png" width="30" height="23" id="iconImgReplace">
+                <img src="friends-active.png" width="24" height="27" id="iconImgReplace">
+                <img src="statistics-active.png"  width="23" height="23" id="iconImgReplace">
+            </div> -->
+
+        </nav>
+
+        
+
+    </section>
+    <script src="tma.js"></script>
+</body>
+</html>

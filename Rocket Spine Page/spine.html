@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKET TMA</title>
+    <link rel="stylesheet" href="spine.css">
+</head>
+<body>
+    <section>
+        <div class="spine_board">
+            <div class="spine_frame_top">
+                <div class="spine_close">&times;</div>
+                <div class="spine_count_board">3 Spin</div>
+        </div>
+
+        <!-- spiner section         -->
+            <div class="spine_wheel">
+                <!-- <img src="spine board 1.png" class="spin_board" id="spin_board" width="480" height="480"> -->
+
+                <div class="spin_board_rotate" class="spin_board" id="spin_board">
+                    <!-- <button id="spin">Spin</button>
+                    <span class="arrow"></span> -->
+                    <div class="container" id="container">
+                        <div class="one" style="font-size:28px">0</div>
+                        <div class="two">+1500 RKT</div>
+                        <div class="three">+50 RKT</div>
+                        <div class="four">+1000 RKT</div>
+                        <div class="five">+250 RKT</div>
+                        <div class="six">+500 RKT</div>
+                        <div class="seven">+10000 RKT</div>
+                        <div class="eight">+2500 RKT</div>
+                        <div class="nine">+100 RKT</div>
+                        <div class="ten">+50000 RKT</div>
+                    </div>
+                </div>
+
+    
+
+                <img src="spin border.png" class="spin_border" width="430" height="430">
+                <!-- <img src="spin hook.png" class="spin_hook" id="spin_hook" width="95" height="190"> -->
+                <img src="spine hook 1.png" onclick="spineProperty()" class="spin_hook_1" id="spin_hook_1" width="140" height="140">
+            </div>
+
+
+        <!-- spin button section             -->        
+            <button class="spine_btn" id="spine_btn" onclick="spineProperty()">
+                <span class="spine_btn_text">Spine & Win</span>
+            </button>
+        </div>
+       
+        <div class="WinSpin-body">
+            <div class="blur-Backround"></div>
+
+            <div class="WinSpine-alertPopUp">
+                <img src="coin20a.png" width="220px" height="125px">
+                <span>
+                    <p>You Just Won</p>
+                    <p>+1000</p>
+                    <p>RKT</p>
+                </span>
+                <button>Congratulations</button>
+            </div>
+
+            <div class="WinSpine-alertPopUp2">
+                <img src="sad emoji1.png" width="170px" height="170px">
+                <span>
+                    <p>Wasn't your lucky spin.</p>
+                    <p>It was a great effort, but<br> keep trying.</p>
+                </span>
+                <button>Alright!</button>
+            </div>
+
+        </div>
+
+    </section>
+     
+    
+    <script src="spine.js"></script>
+
+
+</body>
+</html>
