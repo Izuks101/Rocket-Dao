@@ -13,7 +13,7 @@ body{
 }
 section{
     border: none;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     height: 932px;
     width: 430px;
     display: flex;
