@@ -322,21 +322,21 @@ function showBtn(bottomMenu){
     });  
 
 
-    const iconElement = document.getElementById(bottomMenu + "iconImg");
-    switch(buttonId) {
-        case 'home':
-        iconElement.textContent = '🏡';  // Changed icon
-        break;
-        case 'search':
-        iconElement.textContent = '🔎';  // Changed icon
-        break;
-        case 'notifications':
-        iconElement.textContent = '📬';  // Changed icon
-        break;
-        case 'profile':
-        iconElement.textContent = '😊';  // Changed icon
-        break;
-    }
+    // const iconElement = document.getElementById(bottomMenu + "iconImg");
+    // switch(buttonId) {
+    //     case 'home':
+    //     iconElement.textContent = '🏡';  // Changed icon
+    //     break;
+    //     case 'search':
+    //     iconElement.textContent = '🔎';  // Changed icon
+    //     break;
+    //     case 'notifications':
+    //     iconElement.textContent = '📬';  // Changed icon
+    //     break;
+    //     case 'profile':
+    //     iconElement.textContent = '😊';  // Changed icon
+    //     break;
+    // }
 }
 
 

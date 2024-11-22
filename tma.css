@@ -21,14 +21,38 @@ section{
     align-items: center;
     flex-direction: column;
     position: relative;
+    overflow: scroll;
 }
+
+@media (max-width: 720px){
+    section{
+        border: 1px solid red;
+        width: 100%;
+        /* height: 932px; */
+    }
+}
+
+@media (max-width: 720px){
+    nav{
+        width: 100%;
+    };
+}
+
+/* @media (max-width: 720px){
+    .backImg3{
+        position: absolute;
+        top: 70px;
+        left: -10px;
+    }
+} */
+
 
 /* INITIALIZATION PAGE */
 #initializing-page{
     /* border: 3px  solid salmon; */
     position: absolute;
     height: 932px;
-    width: 430px;
+    width: 100%;
     background: none;
     display: flex;
     justify-content: space-between;
@@ -173,7 +197,7 @@ section{
 .offerPage{
     position: absolute;
     height: 932px;
-    width: 430px;
+    width: 100%;
     background: none;
     display: flex;
     justify-content: space-around;
@@ -356,7 +380,7 @@ main{
     border: none;
     /* height: 932px; */
     height: 819px;
-    width: 430px;
+    width: 100%;
     background-image: radial-gradient(#2D2D2C 2%, #18181B);
     display: flex;
     justify-content: space-between;
@@ -387,7 +411,7 @@ main.active{
         overflow: hidden;
         position: relative;
         height: 400px;
-        width: 430px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1925,7 +1949,7 @@ section main:nth-child(8){
 nav{
     border: none;
     height: 113px;
-    width: 430px;
+    width: 100%;
     background-color: #0E0E10;
     display: flex;
     justify-content: space-between;
